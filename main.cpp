@@ -11,10 +11,10 @@ int main(int argc, char* argv[])
 	}
 
 	std::vector<std::string> chanlist;
-	chanlist.push_back("#ninbottest");
-	chanlist.push_back("#gamepro");
+	chanlist.push_back("#chan1");
+	chanlist.push_back("#chan2");
 
-	IRCOptotron::BotController::start("_nin_bot", "208.51.40.2", chanlist);
+	IRCOptotron::BotController::start("bot", "208.51.40.2", chanlist);
 
 	return 0;
 }
