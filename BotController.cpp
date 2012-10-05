@@ -573,7 +573,7 @@ void event_numeric( irc_session_t * session, unsigned int event,
 
 			//Annoyingly they send the nicklist with +s and @'s in the names.
 			nicklist.erase(std::remove(nicklist.begin(), nicklist.end(), '+'), nicklist.end());
-			nicklist.erase(std::remove(nicklist.begin(), nicklist.end(), '+'), nicklist.end());
+			nicklist.erase(std::remove(nicklist.begin(), nicklist.end(), '@'), nicklist.end());
 
 			BotController::doWhoisNicklist(chan, nicklist);
 		}
